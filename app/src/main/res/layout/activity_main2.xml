@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manasatpc.recyclingfact.Main2Activity">
+<EditText
+    android:id="@+id/enter_name"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:hint="@string/enter_name"
+    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/grow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grow"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/make"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/make"
+        android:layout_toRightOf="@+id/grow"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/cook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cook"
+        android:layout_toLeftOf="@+id/grow"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/eat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eat"
+        android:layout_above="@+id/grow"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shop"
+        android:layout_below="@+id/grow"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="list view"
+        android:textAllCaps="false"
+        android:layout_below="@+id/shop"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="recycler view"
+        android:textAllCaps="false"
+        android:layout_below="@+id/list_view"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+</RelativeLayout>

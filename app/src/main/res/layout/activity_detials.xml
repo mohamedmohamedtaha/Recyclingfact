@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manasatpc.recyclingfact.DetialsActivity">
+    <!-- تعتبر خواص الImageView مفصولة عن خواص محتواها، لتغيير حجم محتوى الImageView يجب علينا تغيير الخاصية   scaleType
+-->
+    <ImageView
+        android:id="@+id/show_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/cook" />
+
+    <TextView
+        android:padding="16dp"
+        android:id="@+id/show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_image"/>
+    <TextView
+        android:paddingTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/show_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_title"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_above="@+id/share_friend"/>
+    <Button
+        android:id="@+id/share_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/share_friend"
+        android:layout_alignParentBottom="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</RelativeLayout>
