@@ -3,6 +3,7 @@
     package="com.example.manasatpc.recyclingfact">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,12 +16,46 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
         </activity>
         <activity android:name=".DetialsActivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".ListActivity" />
         <activity android:name=".RecyclerViewActivity" />
-        <activity android:name=".SaveMyData"></activity>
+        <activity android:name=".SaveMyData" />
+        <activity android:name=".SearchableActivity" android:launchMode="singleTop">
+            <intent-filter >
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable" android:value=".SearchableActivity"/>
+
+        </activity>
     </application>
 
 </manifest>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

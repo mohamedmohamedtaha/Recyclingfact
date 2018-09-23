@@ -5,7 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.manasatpc.recyclingfact.MainActivity">
+<android.support.v7.widget.SearchView
+    android:id="@+id/search_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
+</android.support.v7.widget.SearchView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,9 +24,27 @@
         android:id="@+id/facttextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/search_view"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         />
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/login_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sent_twitter"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical" />
+    <Button
+        android:id="@+id/sent_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/factButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="ارسل التغريدة"
+        android:visibility="gone"/>
     <Button
         android:id="@+id/factButton"
         style="@style/Widget.AppCompat.Button.Colored"
